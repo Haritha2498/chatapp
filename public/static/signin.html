@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN_IN</title>
+    <!-- <link rel="stylesheet" href="signin.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body{
+            background-image: url(../images/im1.jpeg);
+            background-repeat: none;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+
+
+        .d1{
+    width:55%;
+    height:auto;
+    /* background-color: rgb(26, 79, 126); */
+    font-size: 20px;
+    color: rgb(169, 240, 240);
+    margin: auto;
+    margin-top:5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+    
+}
+.d2{
+    font-size: 44px;
+    color: rgb(168, 228, 228);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+.in1{
+    width: 60%;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 15%;
+    padding-left: 4%;
+}
+    </style>
+    <script>
+        function checkpassword(){
+            let username=document.getElementById("uname").value;
+            let useremail=document.getElementById("uemail").value;
+            let userpass=document.getElementById("pass1").value;
+            let upass=document.getElementById("pass2").value;
+            if(userpass==upass)
+            {
+                document.getElementById("pid1").innerHTML="password matches";
+            }
+            else{
+                document.getElementById("pid2").innerHTML="password doesn't matches";
+            }
+
+        }
+    </script>
+</head>
+<body>
+
+<h2 class="d2">SIGN IN</h2>
+    <div class="d1 border-2 border-slate-300 shadow-2xl shadow-gray-500" >
+
+        <h3 class="ml-24 text-gray-300 mb-6">Create a new Account</h3>
+    <input type="text" placeholder=" User name" class="in1" id="uname">
+    <br>
+    <input type="email" placeholder="Email id" class="in1" id="uemail">
+    <br>
+    <input type="password" placeholder="Password" class="in1" id="pass1">
+    <br>
+    <input type="password" placeholder="Password again" class="in1" id="pass2">
+    <br>
+    <p id="pid1" class="text-emerald-500 ml-[30%] mt-10"> </p>
+    <p id="pid2" class="text-red-500 ml-[30%] mt-10"></p>
+    <br>
+    <button class="w-3/6 h-10 border-slate-100 border-2 rounded-2xl mt-12 ml-[20%] text-neutral-300" onclick="checkpassword()"> <a href="home.html">SIGN IN </a> </button>
+    <p class="text-center mt-10 text-gray-300">Already a user.. <a href="login.html"> login </a> </p>
+    
+
+</div>
+
+</body>
+</html>

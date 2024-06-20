@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="inline-flex w-full h-screen" >
+    <div class="w- bg-black w-[5%] text-gray-200"> 
+        <img src="../images/profile.jpeg"  class="w-12 ml-4 rounded-full mt-10" alt="">
+        <h6 class="text-xs mt-4 ml-3">USER NAME</h6>
+        <a href="home.html"> <img src="../images/msg.jpeg" alt="" class="bg-black mt-14"> </a>
+        <a href="setting.html"><img src="../images/setting.png" alt="" class="w-16 ml-4 mt-14"></a> 
+        <p class="ml-2 mt-10"> <a href="/home/haritha/chatapp/public/static/welcome.html"> Log_out </a> </p>
+
+
+    </div>
+    <div class="w-[20%] bg-slate-300" id="middiv">
+        <br>
+        <h3 class="text-2xl font-bold ml-10"> Chats</h3>
+        <img src="../images/addperson.png" alt="" class="w-8 mr-16 float-right" onclick="funimage()">
+        <input type="text" placeholder="search" class="w-2/3 mt-6 ml-12 h-8 border-[1px] border-black rounded-2xl pl-3 ">
+
+
+        <a href="chat.html">
+        <div class="inline-flex bg-slate-300 mt-10 w-full">
+            <img src="../images/dp1.jpeg"  class="w-12 ml-4 rounded-full " alt="">
+            <p class="mt-4 ml-6">FRIEND1</p>
+        </div>
+        </a>
+
+
+        <div class="inline-flex bg-slate-300 mt-10 w-full">
+            <img src="../images/dp2.jpeg"  class="w-12 ml-4 rounded-full " alt="">
+            <p class="mt-4 ml-6">friend2</p>
+        </div>
+        <div class="inline-flex bg-slate-300 mt-10 w-full">
+            <img src="../images/dp3.jpeg"  class="w-12 ml-4 rounded-full " alt="">
+            <p class="mt-4 ml-6">FRIEND3</p>
+        </div>
+        <div class="inline-flex bg-slate-300 mt-10 w-full">
+            <img src="../images/dp4.jpeg"  class="w-12 ml-4 rounded-full " alt="">
+            <p class="mt-4 ml-6">FRIEND4</p>
+        </div>
+
+
+    </div>
+    
+    <div class="w-[75%] bg-slate-100  "> 
+
+
+            <p class="text-center mt-44 text-4xl font-bold">BEGIN A CHAT <br>HERE.. </p>
+
+        <!-- <img src="../images/home.jpeg" alt="" class="w-12/12 h-full ml-10 mt-24"> -->
+
+        
+
+        <!-- <div class="inline-flex bg-slate-400 p-8 w-full h-28">
+            <img src="../images/profile.jpeg"  class="w-12 ml-4 rounded-full " alt="">
+            <p class="mt-4 ml-6">FRIEND1</p>
+        </div>
+        <div class="h-[80%] bg-slate-200">
+<br>
+        <div class="w-44 h-auto bg-gray-200 float-left border border-black rounded-3xl pl-6  ml-10" >hello</div>
+        <br>
+        <div class="w-44 h-auto bg-gray-200 float-right border border-black rounded-3xl pl-6  mr-10" >hello</div>
+
+        </div>
+        <div class="inline-flex w-[100%] ">
+            <input type="text" placeholder="type a message" class="w-2/3 ml-16 mt-6 h-8 border-[1px] border-black r pl-3 mb-2">
+            <img src="../images/voice.jpeg" alt="" class="w-6 h-6 mt-8 ml-20">
+            <img src="../images/send.png" alt="" class="w-6 h-6 mt-8 ml-20">
+
+        </div> -->
+
+    </div>
+
+
+</div>
+
+
+<script>
+    function funimage(){
+
+        
+        document.getElementById("middiv").innerHTML=""
+        document.getElementById("middiv").innerHTML="list contacts"
+
+    }
+</script>
+
+</body>
+</html>
